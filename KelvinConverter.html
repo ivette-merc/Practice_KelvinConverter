@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kelvin Converter</title>
   </head>
-  <script></script>
+  <script>
+    function todaysForecast(tempFahrenheit = 75) {
+      let celsius = Math.floor((tempFahrenheit - 32) * (5 / 9));
+      let kelvin = Math.floor(celsius + 273.15);
+      return `The current temperature outside is ${tempFahrenheit}°F, ${celsius}°C, and ${kelvin}°K.`;
+    }
+    console.log(todaysForecast(32));
+  </script>
   <body></body>
 </html>
